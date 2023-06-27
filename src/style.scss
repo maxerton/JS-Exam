@@ -1,3 +1,70 @@
 @import 'variables';
+
+// bootstrap
+@import 'bs/functions';
+@import 'bs/variables';
+@import 'bs/mixins';
+@import 'bs/utilities';
+@import 'bs/root';
+@import 'bs/reboot';
+@import 'bs/type';
+@import 'bs/containers';
+@import 'bs/grid';
+@import 'bs/tables';
+@import 'bs/transitions';
+@import 'bs/nav';
+@import 'bs/modal';
+@import 'bs/helpers';
+@import 'bs/utilities/api';
+@import 'bs/buttons';
+@import 'bs/forms/input-group';
+@import 'bs/forms/form-select';
+@import 'bs/forms/form-control';
+
 @import 'common';
+
+
+.logo {
+    text-transform: uppercase;
+    color: darkcyan;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-segment {
+    background-color: #4b4949;
+    margin-bottom: 1rem;
+
+    ul.nav-tabs {
+        border-bottom: none;
+
+        li {
+            button.nav-linked {
+                color: white;
+                display: block;
+                padding: 0.5rem 1rem;
+                background-color: transparent;
+                border: none;
+                border-left: 1px solid #666;
+                border-bottom: 2px solid #00ffff;
+                border-bottom-color: #00000000;
+                transition-property: border-bottom-color;
+                transition-duration: 500ms;
+
+                &.active {
+                    background-color: transparent;
+                    border-bottom-color: #00ffff;
+                }
+            }
+        }
+    }
+}
+
+
+.custom-btn {
+    background-color: #eee;
+    border: 1px solid;
+}
+
 
