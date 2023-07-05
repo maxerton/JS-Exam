@@ -1,28 +1,29 @@
-@import 'variables';
+@import "variables";
 
 // bootstrap
-@import 'bs/functions';
-@import 'bs/variables';
-@import 'bs/mixins';
-@import 'bs/utilities';
-@import 'bs/root';
-@import 'bs/reboot';
-@import 'bs/type';
-@import 'bs/containers';
-@import 'bs/grid';
-@import 'bs/tables';
-@import 'bs/transitions';
-@import 'bs/nav';
-@import 'bs/modal';
-@import 'bs/helpers';
-@import 'bs/utilities/api';
-@import 'bs/buttons';
-@import 'bs/forms/input-group';
-@import 'bs/forms/form-select';
-@import 'bs/forms/form-control';
+@import "bs/functions";
+@import "bs/variables";
+@import "bs/mixins";
+@import "bs/utilities";
+@import "bs/root";
+@import "bs/reboot";
+@import "bs/type";
+@import "bs/containers";
+@import "bs/grid";
+@import "bs/tables";
+@import "bs/transitions";
+@import "bs/nav";
+@import "bs/modal";
+@import "bs/close";
+@import "bs/helpers";
+@import "bs/utilities/api";
+@import "bs/buttons";
+@import "bs/forms/input-group";
+@import "bs/forms/form-select";
+@import "bs/forms/form-control";
+@import "bs/card";
 
-@import 'common';
-
+@import "common";
 
 .logo {
     text-transform: uppercase;
@@ -61,10 +62,25 @@
     }
 }
 
-
 .custom-btn {
     background-color: #eee;
     border: 1px solid;
 }
 
+table {
+    th,
+    td {
+        height: 100%;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
 
+.library-navs {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
